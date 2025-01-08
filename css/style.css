@@ -499,7 +499,7 @@ h6,
 
 @media (max-width: 768px) { /* For devices with width 768px or smaller */
     .navbar-brand img {
-        max-height: 40px; /* Limits height for smaller screens */
+        max-height: 48px; /* Limits height for smaller screens */
     }
 }
 
