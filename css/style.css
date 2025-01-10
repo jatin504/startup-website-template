@@ -521,3 +521,127 @@ h6,
 }
 
 
+
+
+
+ /* Map section with overlay */
+ /* .map-container {
+    position: relative;
+    height: 450px;
+    width: 100%;
+  } */
+  .map-container {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  /* Google Map Styling */
+  .map-frame {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* Contact Information Overlay Box */
+  .contact-info {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 100px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+.map-frame {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Ensure content stays within the rounded corners */
+}
+    @media (max-width: 768px) {
+    .contact-info{
+        display: none;
+    }
+}
+  /* Icons and Text Styling */
+  .contact-info p {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .contact-info i {
+    color: #234086;
+    margin-right: 10px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-info {
+      padding: 15px;
+    }
+  }
+
+  /* stepper  */
+   /* Stepper Line Styling */
+   .stepper {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 40px;
+  }
+
+  .stepper::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #234086;
+  }
+
+  /* Step Circle */
+  .step-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #234086;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+  /* Step Content Styling */
+  .step-content {
+    margin-bottom: 25px;
+  }
+
+  .step-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .step-description {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .stepper {
+      padding-left: 20px;
+    }
+  }
