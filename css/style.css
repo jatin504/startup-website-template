@@ -130,11 +130,15 @@ h6,
     z-index: 999;
     /* position: sticky; */
 }
-
+@media (min-width: 768px) {
+    .navbar-dark .navbar-nav .nav-link{
+        margin-left: 25px;
+    }
+}
 .navbar-dark .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
     position: relative;
-    margin-left: 25px;
+    
     padding: 20px 0;
     color: var(--dark);
     font-size: 18px;
@@ -231,7 +235,15 @@ h6,
     height: 3rem;
 }
 
+.footer-about img {
+    padding-top: 10px;
+}
 
+@media (max-width: 768px) {
+    .about-us-img {
+        display: none !important;
+    }
+}
 /*** Section Title ***/
 .section-title::before {
     position: absolute;
@@ -242,12 +254,20 @@ h6,
     bottom: 0;
     background: var(--primary);
     border-radius: 2px;
+
+}
+@media (max-width: 768px) {
+    .section-title::before {
+        left: 50%;
+        margin-left: -75px;
+    }
 }
 
 .section-title.text-center::before {
     left: 50%;
     margin-left: -75px;
 }
+
 
 .section-title.section-title-sm::before {
     width: 90px;
@@ -299,6 +319,11 @@ h6,
     height: 300px;
     padding: 0 30px;
     transition: .5s;
+}
+@media (max-width: 768px) {
+    .service-item {
+        height: 360px;
+    }
 }
 
 .service-item .service-icon {
@@ -437,7 +462,9 @@ h6,
     transform: scale(1.15);
 }
 
-
+.footer-text{
+    font-size: 20px;
+}
 /*** Miscellaneous ***/
 @media (min-width: 991.98px) {
     .facts {
@@ -461,7 +488,12 @@ h6,
 }
 
 .link-animated a {
+    
     transition: .5s;
+}
+.link-animated i{
+
+    color: #5383f6;
 }
 
 .link-animated a:hover {
@@ -644,4 +676,10 @@ h6,
     .stepper {
       padding-left: 20px;
     }
+  }
+
+  @media (max-width: 768px) {
+      .about-us-h1{
+        text-align: center;
+      }
   }
