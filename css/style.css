@@ -683,3 +683,9 @@ h6,
         text-align: center;
       }
   }
+
+  @media (min-width:769px) {
+    .footer-columns{
+        padding-left: 60px;
+    }
+  }
